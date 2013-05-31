@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <EditText
+            android:id="@+id/R_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:ems="10"
+            android:hint="@string/textFName"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorLink="#8539ab" />
+
+        <EditText
+            android:id="@+id/R_last"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:ems="10"
+            android:hint="@string/textLName"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorLink="#8539ab" />
+
+        <!-- Email Label -->
+
+        <EditText
+            android:id="@+id/R_user"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:ems="10"
+            android:hint="@string/textUser"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorLink="#8539ab" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/R_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:ems="10"
+            android:hint="@string/textEmail"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+        <!-- Password Label -->
+
+        <EditText
+            android:id="@+id/R_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:hint="@string/textPswd"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+        <!-- Login button -->
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:onClick="createAccountListener"
+            android:text="@string/registerHere2" />
+    </LinearLayout>
+
+</ScrollView>
